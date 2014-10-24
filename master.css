@@ -46,3 +46,11 @@ a {
   text-decoration: none;
 }
 
+#IconSocialMedia {
+  height: 45px;
+  margin: 5px;
+}
+
+#SocialMedia {
+  text-align: center;
+}
