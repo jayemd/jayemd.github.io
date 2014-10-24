@@ -15,10 +15,12 @@ p {
   font-family: 'muli', sans-serif;
 }
 
-#HeaderPic {
+#AboutPic {
   display:block;
   margin-left: auto;
   margin-right: auto;
+  width: 40%;
+  height: auto;
 }
 
 a.button {
@@ -37,7 +39,7 @@ a.button:hover {
 
 #nav {
   text-align: center;
-  margin-bottom: 20px; 
+  margin-bottom: 30px; 
 }
 
 a {
