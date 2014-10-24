@@ -1,9 +1,12 @@
+
+
 h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 50px;
   font-weight: 300;
   color: #FBB040;
   text-align: center;
+  margin: 20px;
 }
 
 p {
@@ -14,7 +17,29 @@ p {
 
 #HeaderPic {
   display:block;
-  vertical-align: middle;
   margin-left: auto;
   margin-right: auto;
+}
+
+a.button {
+  padding: 10px 30px 10px 30px;
+  color: #FFF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 13px;
+  background-color: #FBBF6D;
+  display: inline;
+  margin: 5px;
+}
+
+a.button:hover {
+  background-color: #F9AF4C;
+}
+
+#nav {
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+a {
+  text-decoration: none;
 }
