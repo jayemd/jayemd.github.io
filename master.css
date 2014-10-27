@@ -58,9 +58,8 @@ a {
 }
 
 #SocialMedia {
-  position: fixed;
   text-align: center;
-  bottom: 2%;
+  top: 99%;
 }
 
 .clear {
