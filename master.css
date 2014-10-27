@@ -22,7 +22,6 @@ p {
 }
 
 #AboutPic {
-  display:block;
   margin-left: 5%;
   margin-right: 2%;
   width: 40%;
@@ -37,7 +36,6 @@ a.button {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 13px;
   background-color: #FBBF6D;
-  display: inline;
   margin: 5px;
 }
 
