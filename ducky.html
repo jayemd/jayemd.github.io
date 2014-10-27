@@ -1,0 +1,234 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ducky</title>
+<link href='http://fonts.googleapis.com/css?family=Fascinate+Inline' rel='stylesheet' type='text/css'>
+<style type="text/css">
+html {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+html {
+    background-image:url(img/logo-bg.png);
+}
+html.scrolled {
+    background-image:url(img/oystersrockafeller.jpg);
+}
+html.scrolled2 {
+	background-image:url(img/duckalorange.jpg)
+}
+html.scrolled3 {
+	background-image:url(img/lemoncake.jpg)
+}
+html.scrolled4 {
+	background-image:url(img/ginger%20ale.jpg)
+}
+#maincontainer {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	margin: 0 px;
+}
+.header {
+	font-family: 'Fascinate Inline', cursive;
+	font-size: 72px;
+	color: #FFF;
+	height: 300px;
+	padding-top: 200px
+}
+#sec1 {
+	margin-top: 0px;
+	height: 521px;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url(img/logo.png);
+}
+#section01 {
+	width: 100%;
+	height: 1000px;
+	background-color: #FFF;
+}
+#sec2 {
+}
+#section02 {
+	width: 100%;
+	height: 1000px;
+	background-color: #FFF;
+	}
+#sec3 {
+}
+#section03 {
+	width: 100%;
+	height: 1000px;
+	background-color: #FFF;
+}
+#sec4 {
+}
+#section04 {
+	width: 100%;
+	height: 1000px;
+	background-color: #FFF;
+}
+#sec5 {
+}
+#section05 {
+	width: 100%;
+	height: 1000px;
+	background-color: #FFF;
+}
+.sectionName {
+	color: #FFFFFF;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 90px;
+	position: absolute;
+	width: 500px;
+	height: 100px;
+}
+body {
+	margin-top: 0px;
+}
+#menu {
+	margin-top: 0px;
+	margin-left: 1000px;
+	position: fixed;
+	width: 150px;
+	height: 120px;
+	z-index: 5;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	background-color: #ffffff;
+	opacity: 0.25;
+	
+	line-height: 24px;
+	text-indent: 20px;
+}
+
+</style>
+
+<!--This is the Jquery Link - this makes the scroling happen-->
+<script src="http://code.jquery.com/jquery-1.5.js"></script>
+
+</head>
+
+<body>
+
+<div id="menu">
+<div id="sec01but"><span style="cursor:pointer">Top</span></div>
+<div id="sec02but"><span style="cursor:pointer">Hors d'oeuvre</span></div>
+<div id="sec03but"><span style="cursor:pointer">Main Course</span></div>
+<div id="sec04but"><span style="cursor:pointer">Dessert</span></div>
+<div id="sec05but"><span style="cursor:pointer">Beverages</span></div>
+</div>
+
+<div id="sec1"></div>
+
+<div id="maincontainer">
+<div id="section01">
+  <div class="sectionName">Section 01</div>
+  </div>
+  
+<div id="sec2"></div>
+<div class="header">
+  <center>hors de'oeuvre</center>
+  </div>
+<div id="section02">
+  <div class="sectionName">Section 02</div>
+  </div>
+  
+<div id="sec3"></div>
+<div class="header">
+ <center>Main Course</center>
+ </div>
+<div id="section03">
+  <div class="sectionName">main Course</div>
+  </div>
+
+<div id="sec4"></div>  
+<div class="header">
+ <center>Dessert</center>
+ </div>
+ <div id="section04">
+  <div class="sectionName">dessert</div>
+  </div>
+  
+<div id="sec5"></div>
+<div class="header">
+ <center>beverages</center>
+ </div>
+ <div id="section05">
+  <div class="sectionName">Beverages</div>
+  </div>
+
+</div>
+
+<!--Here comes the JQuery-->
+<script>
+jQuery(window).scroll(function(){
+    var fromTop1 = 500; // distance to trigger
+	var fromTop2 = 2000;
+	var fromTop3 = 3500;
+	var fromTop4 = 5000;
+    var scrolledFromtop = jQuery(window).scrollTop();
+    if(scrolledFromtop > fromTop1 && scrolledFromtop < fromTop2){
+        jQuery('html').addClass('scrolled');
+		jQuery('html').removeClass('scrolled2');
+		jQuery('html').removeClass('scrolled3');
+		jQuery('html').removeClass('scrolled4');
+	}
+	else if(scrolledFromtop > fromTop2 && scrolledFromtop < fromTop3){
+		jQuery('html').addClass('scrolled2');
+		jQuery('html').removeClass('scrolled');
+		jQuery('html').removeClass('scrolled3');
+		jQuery('html').removeClass('scrolled4');
+	}
+	else if(scrolledFromtop > fromTop3 && scrolledFromtop < fromTop4){
+		jQuery('html').addClass('scrolled3');
+		jQuery('html').removeClass('scrolled');
+		jQuery('html').removeClass('scrolled2');
+		jQuery('html').removeClass('scrolled4');
+	}
+	else if(scrolledFromtop > fromTop4){
+		jQuery('html').addClass('scrolled4');
+		jQuery('html').removeClass('scrolled');
+		jQuery('html').removeClass('scrolled2');
+		jQuery('html').removeClass('scrolled3');
+	}
+	else{
+	 	jQuery('html').removeClass('scrolled');
+		jQuery('html').removeClass('scrolled2');
+		jQuery('html').removeClass('scrolled3');
+		jQuery('html').removeClass('scrolled4');
+	}
+});
+
+
+
+$("#sec01but").click(function() {
+$('html,body').animate({scrollTop: $('#sec1').offset().top},'slow');
+} );
+
+$("#sec02but").click(function() {
+$('html,body').animate({scrollTop: $('#sec2').offset().top},'slow');
+} );
+
+$("#sec03but").click(function() {
+$('html,body').animate({scrollTop: $('#sec3').offset().top},'slow');
+} );
+$("#sec04but").click(function() {
+$('html,body').animate({scrollTop: $('#sec4').offset().top},'slow');
+} );
+$("#sec05but").click(function() {
+$('html,body').animate({scrollTop: $('#sec5').offset().top},'slow');
+} );
+</script>
+
+</body>
+</html>
