@@ -1,4 +1,8 @@
 
+body {
+  left: 10px;
+  right: 10px;
+}
 
 h1 {
   font-family: 'Josefin Sans', sans-serif;
@@ -11,16 +15,20 @@ h1 {
 
 p {
   font-size: 13px;
-  text-align: center;
   font-family: 'muli', sans-serif;
+  float: left;
+  width: 48%;
+  margin-right: 5%;
 }
 
 #AboutPic {
   display:block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 5%;
+  margin-right: 2%;
   width: 40%;
+  max-width: 500px;
   height: auto;
+  float: left;
 }
 
 a.button {
@@ -39,7 +47,7 @@ a.button:hover {
 
 #nav {
   text-align: center;
-  margin-bottom: 30px; 
+  margin-bottom: 5%; 
 }
 
 a {
@@ -52,5 +60,12 @@ a {
 }
 
 #SocialMedia {
+  position: fixed;
   text-align: center;
+  bottom: 2%;
+}
+
+.clear {
+  width: 100%;
+  clear: both;
 }
