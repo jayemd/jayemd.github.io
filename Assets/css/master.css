@@ -14,12 +14,14 @@ body {
 }
 
 .media-object img {
-  max-width: 100%;
+
+  
 }
 
 .media-content {
   float: left;
-  width: 60%;
+  width: 55%;
+  margin-left: 5%;
 }
 
 h1 {
@@ -32,24 +34,22 @@ h1 {
 }
 
 h2 {
-  font-family: 'muli', sans-serif;
   font-size: 18px;
+  font-family: 'muli', sans-serif;
 }
 
 p {
   font-size: 13px;
   font-family: 'muli', sans-serif;
-  width: 48%;
   margin-right: 5%;
 }
 
 #AboutPic {
-  margin-left: 5%;
-  margin-right: 2%;
-  width: 40%;
-  max-width: 500px;
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
   height: auto;
-  float: left;
 }
 
 a.button {
